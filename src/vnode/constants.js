@@ -1,4 +1,4 @@
-export const VNodeFlags = {
+export let VNodeFlags = {
   ELEMENT_HTML: 1,
   ELEMENT_SVG: 1 << 1,
   COMPONENT_STATEFUL_NORMAL: 1 << 2,
@@ -14,7 +14,7 @@ VNodeFlags.ELEMENT = VNodeFlags.ELEMENT_HTML | VNodeFlags.ELEMENT_SVG
 VNodeFlags.COMPONENT_STATEFUL = VNodeFlags.COMPONENT_STATEFUL_NORMAL | VNodeFlags.COMPONENT_STATEFUL_SHOULD_KEEP_ALIVE | VNodeFlags.COMPONENT_STATEFUL_KEPT_ALIVE
 VNodeFlags.COMPONENT = VNodeFlags.COMPONENT_STATEFUL | VNodeFlags.COMPONENT_FUNCTIONAL
 
-export const ChildrenFlags = {
+export let ChildrenFlags = {
   UNKNOWN_CHILDREN: 0,
   NO_CHILDREN: 1,
   SINGLE_VNODE: 1 << 1,
