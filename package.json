@@ -1,0 +1,24 @@
+{
+  "name": "learn-vue-source",
+  "version": "1.0.0",
+  "description": "学习Vue的源码",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist -s",
+    "clean": "rm -r dist",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "wchaochao",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "eslint": "^6.8.0"
+  }
+}
